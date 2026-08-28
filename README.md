@@ -1,2 +1,1 @@
-# Aula-1-C-faculdade
-Primeira aula de C da faculdade | Scan e cálculos.
+Repositório destinado para as aulas de C da faculdade.
