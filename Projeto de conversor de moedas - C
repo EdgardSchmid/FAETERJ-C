@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <string.h>
+int main (){
+    
+    char moedaescolhida[10];
+    char moedaconversão[10];
+    float valor;
+    float conversão;
+    
+    printf ("Escolha uma das moedas abaixo para converter:\nReal; \nEuro; \nDólar. \n");
+    scanf ("%s" , moedaescolhida);
+    
+    if (strcasecmp (moedaescolhida, "Real") == 0 || strcasecmp(moedaescolhida, "Euro") == 0 || strcasecmp(moedaescolhida,"Dólar") == 0){
+    
+    printf ("\nVocê escolheu a moeda %s.\n", moedaescolhida);
+    } else {
+    printf ("\nEscolha uma moeda válida!\n");
+    return 0;
+    }
+    
+    printf ("Escolha o valor da moeda: \n");
+    scanf ("%f", & valor);
+    
+    if (strcasecmp (moedaescolhida, "Real") == 0){
+        printf ("\nEscolha para qual moeda %s será convertida: \nEuro; \nDólar. \n", moedaescolhida);
+        scanf ("%s" , moedaconversão);
+        
+        if (strcasecmp (moedaconversão, "Euro") ==0){
+            conversão = valor * 0.17;
+            printf ("\n%.2f em %s é %.2f em %s.", valor, moedaescolhida, conversão, moedaconversão);
+        }
+        else if (strcasecmp (moedaconversão, "Dólar") == 0){
+            conversão = valor * 0.19;
+            printf ("\n%.2f em %s é %.2f em %s.", valor, moedaescolhida, conversão, moedaconversão);
+        }
+        else{
+            printf ("\nEscolha uma moeda válida!");
+        }
+    }
+    else if (strcasecmp (moedaescolhida, "Euro") == 0){
+        printf ("\nEscolha para qual moeda %s será convertida: \nReal; \nDólar. \n", moedaescolhida);
+        scanf ("%s" , moedaconversão);
+        
+        if (strcasecmp (moedaconversão, "Real") ==0){
+            conversão = valor * 5.97;
+            printf ("\n%.2f em %s é %.2f em %s.", valor, moedaescolhida, conversão, moedaconversão);
+        }
+        else if (strcasecmp (moedaconversão, "Dólar") == 0){
+            conversão = valor * 1.16;
+            printf ("\n%.2f em %s é %.2f em %s.", valor, moedaescolhida, conversão, moedaconversão);
+        }
+        else{
+            printf ("\nEscolha uma moeda válida!");
+        }
+    }
+    else if (strcasecmp (moedaescolhida, "Dólar") == 0){
+        printf ("\nEscolha para qual moeda %s será convertida: \nReal; \nEuro. \n", moedaescolhida);
+        scanf ("%s" , moedaconversão);
+        
+        if (strcasecmp (moedaconversão, "Real") ==0){
+            conversão = valor * 5.14;
+            printf ("\n%.2f em %s é %.2f em %s.", valor, moedaescolhida, conversão, moedaconversão);
+        }
+        else if (strcasecmp (moedaconversão, "Euro") == 0){
+            conversão = valor * 0.86;
+            printf ("\n%.2f em %s é %.2f em %s.", valor, moedaescolhida, conversão, moedaconversão);
+        }
+        else{
+            printf ("\nEscolha uma moeda válida!");
+        }
+    }
+    
+return 0;
+}
