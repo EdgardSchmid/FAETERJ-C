@@ -1,0 +1,61 @@
+#include <stdio.h>
+int main (){
+
+
+    //Atividade 1.
+    /*int idade;
+    printf ("Digite sua idade: ");
+    scanf ("%d" , & idade);
+    
+    if (idade >= 18){
+        printf ("Você pode entrar!");
+    }
+    else {
+        printf ("Você não pode entrar!");
+    }*/
+
+  //atividade 2
+    /*float nota1;
+    float nota2;
+    float nota3;
+    float media;
+    
+    printf ("digite sua nota do primeiro trimestre: ");
+    scanf ("%f", & nota1);
+    printf ("digite sua nota do segundo trimestre: ");
+    scanf ("%f", & nota2);  
+    printf ("digite sua nota do terceiro trimestre: ");
+    scanf ("%f", & nota3); 
+    
+    if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10){
+        printf ("Digite uma nota válida!");
+        return 0;
+    }
+    
+    media = (nota1 + nota2 + nota3) / 3;
+    
+    if (media >= 6){
+        printf ("Com a sua média de %.2f, você está aprovado! ", media);
+    }
+    else {
+        printf ("Com a sua média de %.2f, você está reprovado! ", media);
+    }*/
+
+      //Atividade 3:
+    /*int idade;
+    float renda;
+    
+    printf ("Qual a sua idade? ");
+    scanf ("%d", & idade);
+    printf ("Qual a sua renda? ");
+    scanf ("%f", & renda);
+    
+    if (idade >= 25 && renda >= 2000){
+        printf ("Empréstimo liberado!");
+    }
+    else {
+        printf ("Empréstimo negado!");
+    }*/
+    
+    return 0;
+}
