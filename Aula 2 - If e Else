@@ -80,6 +80,27 @@ int main (){
     else {
         printf ("Acesso NEGADO!");
     }*/
+
+    //Atividade 5.
+    /*float venda;
+    float presente;
+    
+    printf ("Qual valor você vendeu no total desse mês? ");
+    scanf ("%f", & venda);
+    
+    if (venda < 0){
+        printf ("É impossível vender um valor negativo");
+    return 0;
+    }
+    
+    if (venda >= 10000){
+        presente = venda * 0.1;
+        printf ("O vendedor ganhou 10%% do valor que vendeu, ou seja R$%.2f.", presente);
+    }
+    else {
+        presente = venda * 0.05;
+        printf ("O vendedor ganhou 5%% do valor que vendeu, ou seja R$%.2f.", presente);
+    }*/
     
     return 0;
 }
