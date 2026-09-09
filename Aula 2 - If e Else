@@ -101,6 +101,18 @@ int main (){
         presente = venda * 0.05;
         printf ("O vendedor ganhou 5%% do valor que vendeu, ou seja R$%.2f.", presente);
     }*/
+
+    //Atividade 6.
+    /*int num;
+    printf ("Digiteum número: ");
+    scanf ("%d",& num);
+    
+    if (num % 2 == 0){
+        printf ("O número %d é par! ", num);
+    }
+    else {
+        printf ("O número %d é ímpar! ", num);
+    }*/
     
     return 0;
 }
