@@ -134,7 +134,7 @@ int main (){
     printf ("%d (A+B) é menor que %d (C).", soma, C);
     }
 
-    else if (soma = C){
+    else if (soma == C){
     printf ("%d (A+B) é igual a %d (C).", soma, C);
     }
 
