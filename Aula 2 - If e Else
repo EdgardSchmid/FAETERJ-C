@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 int main (){
 
 
@@ -180,6 +181,44 @@ int main (){
     }
     else if (MP < 40){
     printf ("Sua média ponderada de %.2f é um E! Reprovado! ", MP);
+    }*/
+
+    //Atividade 9.
+    /*float altura;
+    float peso;
+    float imc;
+    
+    printf ("Fale sua altura: ");
+    scanf ("%f", & altura);
+    printf ("Fale seu peso: ");
+    scanf ("%f", & peso);
+    
+    if (altura <= 0 || peso <= 0){
+        printf ("Diga valores válidos! ");
+        
+        return 0;
+    }
+    
+    imc = peso / pow (altura, 2);
+    
+    if (imc < 18.5) {
+        
+        printf ("Seu IMC é de %.2f e você está abaixo do peso.", imc);
+    }
+    
+    else if (imc < 25) {
+        
+        printf ("Seu IMC é de %.2f e seu peso está normal.", imc);
+    }
+    
+    else if (imc < 30) {
+        
+        printf ("Seu IMC é de %.2f e você está acima do peso.", imc);
+    }
+    
+    else if (imc >= 30) {
+        
+        printf ("Seu IMC é de %.2f e você está OBESO.", imc);
     }*/
     
     return 0;
