@@ -1,0 +1,90 @@
+#include <stdio.h>
+int main (){
+    
+    int categoria;
+    float valor;
+    float desconto;
+    float v_pagar;
+    
+    printf ("Qual o valor da sua compra? ");
+    scanf ("%f", & valor);
+    
+    if (valor <= 0){
+        printf ("Digite um valor válido!");
+        
+        return 0;
+    }
+    
+    printf ("Escolha a categoria do cliente \n 1. Comum \n 2. Estudante \n 3. Professor \n 4. Bronze \n 5. Prata \n 6. Ouro \n 7. Platina \n 8. Diamante \n 9. Mestre \n 10. Grão-Mestre \n ");
+    scanf ("%d", & categoria);
+    
+    if (categoria < 1 || categoria > 10){
+        printf ("Digite uma categoria válida!");
+        
+        return 0;
+    }
+    
+    switch (categoria){
+        
+        case 1:
+        desconto = valor * 0 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente COMUM e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 2:
+        desconto = valor * 0.05 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente ESTUDANTE e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 3:
+        desconto = valor * 0.1 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente PROFESSOR e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 4:
+        desconto = valor * 0.15 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente BRONZE e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 5:
+        desconto = valor * 0.20 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente PRATA e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 6:
+        desconto = valor * 0.25 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente OURO e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 7:
+        desconto = valor * 0.3 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente PLATINA e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 8:
+        desconto = valor * 0.35 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente DIAMANTE e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 9:
+        desconto = valor * 0.4 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente MESTRE e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+        
+        case 10:
+        desconto = valor * 0.5 ;
+        v_pagar = valor - desconto;
+        printf ("O valor que você vai pagar é %.2f. Você é um cliente GRÃO-MESTRE e ganhou %.2f de desconto", v_pagar, desconto);
+        break;
+    }
+    return 0;
+}
