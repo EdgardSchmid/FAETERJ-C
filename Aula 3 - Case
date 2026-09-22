@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 int main (){
     
-    int categoria;
+    /*int categoria;
     float valor;
     float desconto;
     float v_pagar;
@@ -85,6 +86,63 @@ int main (){
         v_pagar = valor - desconto;
         printf ("O valor que você vai pagar é %.2f. Você é um cliente GRÃO-MESTRE e ganhou %.2f de desconto", v_pagar, desconto);
         break;
+    }*/
+
+    float n1;
+    float n2;
+    float soma;
+    float sub;
+    float divisao;
+    float multi;
+    float porcen;
+    float potencia;
+    
+    int opção;
+    
+    printf ("Digite o primeiro número: ");
+    scanf ("%f" , & n1);
+    
+    printf ("Digite o segundo número: ");
+    scanf ("%f" , & n2);
+    
+    printf ("Escolha a operação:\n1 - Somar \n2 - Subtração \n3 - Divisão \n4 - Multiplicação \n5 - Porcentagem \n6 - Potência \n");
+    printf ("Digite: ");
+    scanf ("%d", & opção);
+    
+    switch (opção){
+    case 1:
+    soma = n1+n2;
+    printf ("O resultado é %.2f!",soma);
+    break;
+    
+    case 2:
+    sub = n1-n2;
+    printf ("O resultado é %.2f!",sub);
+    break;
+    
+    case 3:
+    divisao = n1/n2;
+    printf ("O resultado é %.2f!",divisao);
+    break;
+    
+    case 4:
+    multi = n1*n2;
+    printf ("O resultado é %.2f!",multi);
+    break;
+    
+    case 5:
+    porcen = (n1+n2)/100;
+    printf ("O resultado é %.2f!",porcen);
+    break;
+    
+    case 6:
+    potencia = pow (n1,n2);
+    printf ("O resultado é %.2f!",potencia);
+    break;
+    
+    default:
+    printf ("Escolha uma opção válida!");
     }
+    
     return 0;
 }
